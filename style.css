@@ -1,6 +1,70 @@
-img {object-fit:cover;
-    object-position: 50% 50%;
+#ImageDisplay img {
+    display: flex;
+    margin-left: 20%;
+    margin-right: auto;
     height: 300px;
     width: 300px;
     border-radius: 50px;
+    
 }
+#ramenImageRail {
+  display: flex;
+  height: 250px;
+  width: 250px;
+  padding-left: 5%;
+  gap: 10%;
+  padding-top: 10px;
+}
+#ramenForm input {
+   display: flex;
+   margin: auto;
+   margin-left: 45%;
+   border-radius: 5px;
+   padding: 3px;
+   font-family: 'Courier New', Courier, monospace;
+   
+}
+#ramenForm #ramenCommentInput{
+    padding-bottom: 40px;
+
+}
+#ramenSelection{
+    text-align:center;
+   margin-top: -350px;
+  
+}
+#ramenSelection p{
+    margin-right:120px ;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+#ramenForm button{
+    display: flex;
+    margin: auto;
+    margin-top: 20px ;
+    font-family: 'Courier New', Courier, monospace;
+}
+h3 {
+    text-align: center;
+    font-size: 50px;
+   
+} 
+
+    
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    background: linear-gradient(-45deg, #c3dbf1, #84b1be, #3d7792, #2575c0);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+    height: 100vh;
+    margin: 0;
+}
+
+/* background: linear-gradient(-45deg, rgb(179, 197, 238),rgb(105, 139, 219), rgb(20, 129, 106));
+    height: 100vh;
+    margin: 0; */
