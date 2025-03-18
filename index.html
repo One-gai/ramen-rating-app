@@ -16,16 +16,17 @@
         
     </div>
     <div id="ramenSelection">
-        <h3>Ramen Reviews</h3>
-        <p>Name:<br><span id ="nameRamen"></span></p>
-        <p>Resturant:<br><span id ="kitchenMade"></span></p>
-        <p>Rating:<br><span id ="ramenPodium"></span></p>
-        <p>Comment:<br><span id = "commentSection"></span></p>
+        <h3 class="uno">Ramen Reviews</h3>
+        <p>Name:<span id ="nameRamen"></span></p>
+        <p>Resturant:<span id ="kitchenMade"></span></p>
+        <p>Rating:<span id ="ramenPodium"></span></p>
+        <p>Comment:<span id = "commentSection"></span></p>
     </div>
-<h3>Add New Ramen</h3>
+<h3 class="two">Add New Ramen</h3>
 <form id="ramenForm">
     <input type="text" id="ramenFormInput" placeholder="Ramen Name" required>
     <input type="text" id="ramenResturantInput" placeholder="Resturant Made" required>
+    <input type="url" id="ramenUrlInput" placeholder="Ramen image URL"required>
     <input type="number" id="ramenRatingInput" placeholder="Rating" min="0" max="10">
     <input type="text" id="ramenCommentInput" placeholder="Comment">
     <button  type="button" >Submit</button>
