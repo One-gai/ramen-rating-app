@@ -3,35 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramen Rating app</title>
+    <title>Ramen Rating App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="ramenImageRail">
+    <div id="ramenImageRail"></div>
+    <div id="placing">
+        <div id="ImageDisplay">
+            <div id="RAMEN">
+                <img src="" alt="" id="ramenImages">
+            </div>
+        </div>    
+            
+        <div id="ramenSelection">
+            <h3 class="uno">Ramen Reviews</h3>
+            <p>Name: <span id="nameRamen"></span></p>
+            <p>Restaurant: <span id="kitchenMade"></span></p>
+            <p>Rating: <span id="ramenPodium"></span></p>
+            <p>Comment: <span id="commentSection"></span></p>
+        </div>
+    </div>
+    <div>
 
+        <h3 class="two">Add New Ramen</h3>
+        <form id="ramenForm">
+            <input type="text" id="ramenFormInput" placeholder="Ramen Name" required>
+            <input type="text" id="ramenResturantInput" placeholder="Restaurant Made" required>
+            <input type="url" id="ramenUrlInput" placeholder="Ramen Image URL" required>
+            <input type="number" id="ramenRatingInput" placeholder="Rating" min="0" max="10" required>
+            <input type="text" id="ramenCommentInput" placeholder="Comment" required>
+            <button type="submit">Submit</button> <!-- Fixed Submit Button -->
+        </form>
     </div>
-<div id="ImageDisplay">
-    <div id="RAMEN">
-        <img src="" alt="" id="ramenImages">
-        
-    </div>
-    <div id="ramenSelection">
-        <h3 class="uno">Ramen Reviews</h3>
-        <p>Name:<span id ="nameRamen"></span></p>
-        <p>Resturant:<span id ="kitchenMade"></span></p>
-        <p>Rating:<span id ="ramenPodium"></span></p>
-        <p>Comment:<span id = "commentSection"></span></p>
-    </div>
-<h3 class="two">Add New Ramen</h3>
-<form id="ramenForm">
-    <input type="text" id="ramenFormInput" placeholder="Ramen Name" required>
-    <input type="text" id="ramenResturantInput" placeholder="Resturant Made" required>
-    <input type="url" id="ramenUrlInput" placeholder="Ramen image URL"required>
-    <input type="number" id="ramenRatingInput" placeholder="Rating" min="0" max="10">
-    <input type="text" id="ramenCommentInput" placeholder="Comment">
-    <button  type="button" >Submit</button>
+
     <script src="./index.js"></script>
-</form>
-</div>
 </body>
 </html>
